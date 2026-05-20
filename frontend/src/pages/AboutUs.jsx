@@ -2,30 +2,30 @@ import { Link } from 'react-router-dom';
 
 const team = [
   {
-    name: 'Minh Vũ',
+    name: 'Minh Vu',
     role: 'Founder & CEO',
     img: 'https://i.pravatar.cc/200?img=12',
-    desc: 'Người sáng lập với đam mê du lịch xanh và phát triển bền vững tại Hội An.'
+    desc: 'Founder with a passion for sustainable green tourism in Da Nang.'
   },
   {
     name: 'Lan Anh',
     role: 'Operations Manager',
     img: 'https://i.pravatar.cc/200?img=25',
-    desc: 'Điều phối hoạt động hàng ngày, đảm bảo dịch vụ khách hàng hoàn hảo.'
+    desc: 'Coordinates daily operations to ensure a perfect customer experience every time.'
   },
   {
-    name: 'Tuấn Nguyễn',
+    name: 'Tuan Nguyen',
     role: 'Head Mechanic',
     img: 'https://i.pravatar.cc/200?img=15',
-    desc: 'Kỹ thuật viên trưởng chịu trách nhiệm bảo dưỡng và kiểm tra toàn bộ đội xe.'
+    desc: 'Lead technician responsible for maintaining and inspecting the entire scooter fleet.'
   }
 ];
 
 const milestones = [
-  { year: '2019', title: 'Founded', desc: 'T-EcoBike được thành lập với 5 chiếc xe đầu tiên' },
-  { year: '2020', title: 'Expansion', desc: 'Mở rộng đội xe lên 30 chiếc, phục vụ 1.000+ khách hàng' },
-  { year: '2022', title: 'VinFast Partner', desc: 'Trở thành đại lý cho thuê chính thức của VinFast tại Đà Nẵng' },
-  { year: '2024', title: 'New Location', desc: 'Khai trương địa điểm tại 135 Trần Nhân Tông, Phường Hội An Đông, Thành Phố Đà Nẵng' }
+  { year: '2019', title: 'Founded', desc: 'T-EcoBike was established with the first 5 electric scooters' },
+  { year: '2020', title: 'Expansion', desc: 'Fleet grew to 30 scooters, serving 1,000+ happy customers' },
+  { year: '2022', title: 'VinFast Partner', desc: 'Became an official VinFast authorised rental partner in Da Nang' },
+  { year: '2024', title: 'New Location', desc: 'Opened our new location at 135 Tran Nhan Tong, Hoi An Dong Ward, Da Nang' }
 ];
 
 export default function AboutUs() {
@@ -48,9 +48,9 @@ export default function AboutUs() {
               About <span className="text-primary-400">T-EcoBike</span>
             </h1>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Chúng tôi tin rằng du lịch xanh là tương lai. Từ năm 2019, T-EcoBike đã tiên phong
-              trong việc mang đến trải nghiệm khám phá Đà Nẵng theo cách thân thiện với môi trường nhất —
-              hoàn toàn bằng điện, không ô nhiễm, không tiếng ồn.
+              We believe green travel is the future. Since 2019, T-EcoBike has been pioneering
+              the most eco-friendly way to explore Da Nang —
+              100% electric, zero pollution, zero noise.
             </p>
           </div>
         </div>
@@ -68,9 +68,9 @@ export default function AboutUs() {
               </div>
               <h3 className="text-2xl font-bold text-dark-2 mb-3">Our Mission</h3>
               <p className="text-gray-500 leading-relaxed">
-                Cung cấp dịch vụ cho thuê xe điện cao cấp, giúp du khách khám phá Hội An theo cách thân thiện
-                với môi trường nhất. Chúng tôi cam kết mang lại sự tiện lợi, an toàn và trải nghiệm đáng nhớ
-                cho mỗi khách hàng.
+                To provide premium electric scooter rentals that help travellers explore Da Nang
+                in the most eco-friendly way. We are committed to delivering convenience,
+                safety and unforgettable experiences for every customer.
               </p>
             </div>
             <div className="bg-primary-600 rounded-3xl p-8 text-white">
@@ -82,8 +82,8 @@ export default function AboutUs() {
               </div>
               <h3 className="text-2xl font-bold mb-3">Our Vision</h3>
               <p className="text-primary-100 leading-relaxed">
-                Trở thành dịch vụ cho thuê xe điện hàng đầu tại miền Trung Việt Nam, góp phần vào việc
-                giảm ô nhiễm môi trường và thúc đẩy du lịch bền vững tại Hội An, Di sản Văn hóa Thế giới.
+                To become the leading electric scooter rental service in Central Vietnam, contributing
+                to reduced environmental pollution and promoting sustainable tourism in Da Nang, a UNESCO World Heritage city.
               </p>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function AboutUs() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-dark-2">Our Journey</h2>
-            <p className="text-gray-500 mt-2">Từ ý tưởng nhỏ đến dịch vụ được tin tưởng bởi hàng nghìn du khách</p>
+            <p className="text-gray-500 mt-2">From a small idea to a service trusted by thousands of travellers</p>
           </div>
           <div className="relative">
             <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-primary-200" />
@@ -140,7 +140,7 @@ export default function AboutUs() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-dark-2">Meet Our Team</h2>
-            <p className="text-gray-500 mt-2">Đội ngũ tận tâm, luôn sẵn sàng phục vụ bạn</p>
+            <p className="text-gray-500 mt-2">A dedicated team, always ready to serve you</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             {team.map(m => (
@@ -167,16 +167,16 @@ export default function AboutUs() {
                 Why We Choose Electric
               </h2>
               <p className="text-gray-400 leading-relaxed mb-6">
-                Hội An là Di sản Văn hóa Thế giới — một nơi cần được bảo vệ và gìn giữ cho các thế hệ tương lai.
-                Xe điện giúp giảm ô nhiễm không khí, tiếng ồn và góp phần bảo vệ không gian cổ kính này.
+                Da Nang is a vibrant city that deserves to be protected for future generations.
+                Electric scooters help reduce air pollution and noise, contributing to the preservation of this beautiful destination.
               </p>
               <ul className="space-y-3">
                 {[
-                  '0% khí thải CO₂',
-                  'Tiếng ồn gần như bằng 0',
-                  'Chi phí vận hành thấp hơn xe xăng',
-                  'Phù hợp với khu phố cổ Hội An',
-                  'Đóng góp vào du lịch bền vững'
+                  '0% CO₂ emissions',
+                  'Near-silent operation',
+                  'Lower running costs than petrol bikes',
+                  'Perfect for navigating the city centre',
+                  'Contributes to sustainable tourism'
                 ].map(i => (
                   <li key={i} className="flex items-center gap-3 text-gray-300 text-sm">
                     <div className="w-5 h-5 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0">
@@ -200,7 +200,7 @@ export default function AboutUs() {
       <section className="py-16 bg-primary-600">
         <div className="max-w-3xl mx-auto text-center px-4">
           <h2 className="text-3xl font-extrabold text-white mb-4">Join Our Green Journey</h2>
-          <p className="text-primary-100 mb-8">Cùng chúng tôi khám phá Hội An theo cách xanh nhất!</p>
+          <p className="text-primary-100 mb-8">Join us and explore Da Nang the greenest way possible!</p>
           <Link to="/booking" className="bg-white text-primary-600 hover:bg-primary-50 font-bold px-10 py-4 rounded-full transition-all hover:shadow-lg inline-block">
             Book a Scooter →
           </Link>

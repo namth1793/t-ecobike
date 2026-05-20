@@ -23,7 +23,7 @@ function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-primary-500/20 border border-primary-500/40 rounded-full px-4 py-1.5 text-primary-300 text-sm font-medium mb-6">
           <span className="w-2 h-2 bg-primary-400 rounded-full animate-pulse"></span>
-          VinFast Authorized Rental · Hội An, Đà Nẵng
+          VinFast Authorized Rental · Da Nang, Vietnam
         </div>
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight mb-6">
@@ -38,7 +38,7 @@ function Hero() {
         <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
           Travel up to <span className="text-primary-400 font-semibold">100km</span>, swap batteries in{' '}
           <span className="text-primary-400 font-semibold">1 minute</span>, all without a driver's license.
-          Explore Hội An the eco-friendly way!
+          Explore Da Nang the eco-friendly way!
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center">
@@ -93,7 +93,7 @@ function ScootersSection() {
     return () => obs.disconnect();
   }, []);
 
-  const features = ['Không cần bằng lái', 'Tầm hoạt động 60km', 'Đổi pin 1 phút', '100% Hợp pháp'];
+  const features = ['No License Required', '60km Range', '1-Min Battery Swap', '100% Legal'];
 
   return (
     <section id="scooters" ref={ref} className="py-20 lg:py-28 bg-gray-50">
@@ -102,7 +102,7 @@ function ScootersSection() {
           <span className="text-primary-600 text-sm font-semibold uppercase tracking-wider">Our Electric Scooter</span>
           <h2 className="section-title mt-2">VinFast Evo Grand Lite</h2>
           <p className="section-subtitle">
-            Xe điện VinFast chất lượng cao — không cần bằng lái, thân thiện môi trường và hoàn toàn hợp pháp!
+            Premium VinFast electric scooter — no license needed, eco-friendly and 100% legal!
           </p>
         </div>
 
@@ -123,7 +123,7 @@ function ScootersSection() {
             {/* Range badge */}
             <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl shadow-xl p-4 border border-gray-100 text-center">
               <div className="text-2xl font-extrabold text-primary-600">60km</div>
-              <div className="text-gray-400 text-xs">tầm hoạt động</div>
+              <div className="text-gray-400 text-xs">range</div>
             </div>
           </div>
 
@@ -131,7 +131,7 @@ function ScootersSection() {
           <div className={`pt-6 lg:pt-0 transition-all duration-700 delay-200 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
             <h3 className="text-3xl font-extrabold text-dark-2 mb-2">VinFast Evo Grand Lite</h3>
             <p className="text-gray-500 text-sm mb-6">
-              Lựa chọn hoàn hảo cho hành trình khám phá Đà Nẵng. Thiết kế trẻ trung, không cần bằng lái, thân thiện với môi trường.
+              The perfect choice for exploring Da Nang. Stylish design, no license needed, eco-friendly.
             </p>
 
             {/* Features */}
@@ -149,22 +149,22 @@ function ScootersSection() {
             {/* Pricing tiers */}
             <div className="grid grid-cols-2 gap-3 mb-6">
               <div className="bg-white rounded-2xl p-4 shadow text-center border border-gray-100">
-                <div className="text-xs text-gray-400 mb-1 font-medium">1 ngày</div>
-                <div className="text-2xl font-extrabold text-primary-600">200.000₫</div>
+                <div className="text-xs text-gray-400 mb-1 font-medium">1 day</div>
+                <div className="text-2xl font-extrabold text-primary-600">200,000₫</div>
               </div>
               <div className="bg-primary-50 rounded-2xl p-4 shadow text-center border border-primary-200 relative overflow-hidden">
                 <div className="absolute top-1 right-2 text-xs text-primary-500 font-bold">-25%</div>
-                <div className="text-xs text-primary-600 mb-1 font-medium">Từ 2 ngày</div>
-                <div className="text-2xl font-extrabold text-primary-600">150.000₫/ngày</div>
+                <div className="text-xs text-primary-600 mb-1 font-medium">2+ days</div>
+                <div className="text-2xl font-extrabold text-primary-600">150,000₫/day</div>
               </div>
             </div>
 
             <div className="flex gap-3">
               <Link to="/booking?scooter=1" className="btn-primary flex-1 justify-center text-sm">
-                Đặt xe ngay
+                Book Now
               </Link>
               <Link to="/electric-motorbike" className="btn-outline flex-1 justify-center text-sm">
-                Xem chi tiết
+                View Details
               </Link>
             </div>
           </div>
@@ -181,28 +181,28 @@ const benefits = [
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
     ),
     title: 'No License Required',
-    desc: 'Xe điện VinFast được phân loại là xe đạp điện theo luật Việt Nam — du khách không cần bằng lái!'
+    desc: 'VinFast electric scooters are classified as e-bikes under Vietnamese law — no driver\'s license needed for tourists!'
   },
   {
     icon: (
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
     ),
     title: '100% Legal',
-    desc: 'Hoạt động hoàn toàn hợp pháp theo quy định giao thông Việt Nam. An tâm tuyệt đối khi lưu thông.'
+    desc: 'Fully compliant with Vietnamese traffic regulations. Ride with total peace of mind anywhere in Da Nang.'
   },
   {
     icon: (
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
     ),
     title: '60km Range',
-    desc: 'Tầm hoạt động 60km mỗi lần đổi pin — đủ để khám phá toàn bộ Hội An và các vùng lân cận.'
+    desc: '60km of range per battery swap — more than enough to explore all of Da Nang and the surrounding areas.'
   },
   {
     icon: (
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
     ),
     title: '1-Minute Battery Swap',
-    desc: 'Đổi pin siêu nhanh chỉ trong 1 phút tại các trạm tiện lợi. Không mất thời gian chờ sạc!'
+    desc: 'Ultra-fast battery swap in under 1 minute at convenient stations. No waiting around for charging!'
   }
 ];
 
@@ -214,7 +214,7 @@ function WhyChoose() {
           <span className="text-primary-600 text-sm font-semibold uppercase tracking-wider">Why T-EcoBike</span>
           <h2 className="section-title mt-2">Why Choose Electric?</h2>
           <p className="section-subtitle">
-            Những lý do khiến xe điện là lựa chọn hoàn hảo cho hành trình khám phá Hội An của bạn
+            Reasons why electric scooters are the perfect choice for your Da Nang adventure
           </p>
         </div>
 
@@ -242,24 +242,24 @@ function WhyChoose() {
 /* ─── Safety Tips (Accordion) ─── */
 const tips = [
   {
-    q: 'Quy định đội mũ bảo hiểm',
-    a: 'Tất cả người lái và hành khách phải đội mũ bảo hiểm trong suốt hành trình. Chúng tôi cung cấp mũ bảo hiểm chất lượng cao miễn phí khi thuê xe.'
+    q: 'Helmet regulations',
+    a: 'All riders and passengers must wear a helmet throughout the journey. We provide high-quality helmets free of charge with every rental.'
   },
   {
-    q: 'Tuân thủ luật giao thông',
-    a: 'Đi đúng làn đường, dừng đèn đỏ, và tuân thủ các biển báo giao thông. Tốc độ tối đa khuyến nghị trong phố cổ Hội An là 20km/h.'
+    q: 'Obey traffic laws',
+    a: 'Stay in the correct lane, stop at red lights, and follow all road signs. The recommended maximum speed in the Da Nang city centre is 40km/h.'
   },
   {
-    q: 'Kiểm tra xe trước khi xuất phát',
-    a: 'Kiểm tra mức pin, phanh, đèn và lốp xe trước mỗi chuyến đi. Nếu phát hiện bất thường, hãy liên hệ ngay với chúng tôi để được hỗ trợ.'
+    q: 'Pre-ride inspection',
+    a: 'Check the battery level, brakes, lights and tyres before each ride. If you notice anything unusual, contact us immediately for assistance.'
   },
   {
-    q: 'Xử lý khi hết pin',
-    a: 'Khi pin yếu, hãy tìm trạm đổi pin gần nhất qua ứng dụng VinFast hoặc gọi hotline +84 905 659 886 để được hướng dẫn trạm đổi pin gần nhất trong bán kính 10km.'
+    q: 'What to do when the battery is low',
+    a: 'When the battery is running low, find the nearest swap station via the VinFast app or call us at +84 905 659 886 for directions to the closest station within 10km.'
   },
   {
-    q: 'Bảo vệ xe khi dừng đỗ',
-    a: 'Luôn khóa xe và lấy chìa khóa khi rời xe. Đậu xe tại các bãi đỗ xe được chỉ định. Chúng tôi không chịu trách nhiệm với thiệt hại do không tuân thủ quy định bảo quản xe.'
+    q: 'Protect the scooter when parked',
+    a: 'Always lock the scooter and take the key when you leave. Park in designated areas only. We are not responsible for damage caused by failing to follow parking guidelines.'
   }
 ];
 
@@ -276,7 +276,7 @@ function SafetyTips() {
               Safety & Tips
             </h2>
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              An toàn là ưu tiên hàng đầu của chúng tôi. Hãy đọc và làm theo các hướng dẫn này để có một hành trình an toàn và thú vị.
+              Safety is our top priority. Please read and follow these guidelines for a safe and enjoyable ride.
             </p>
             <div className="space-y-3">
               {tips.map((tip, i) => (
@@ -308,7 +308,7 @@ function SafetyTips() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl shadow-primary-500/10">
               <img
-                src="https://images.unsplash.com/photo-1558981285-6f0c8d9c18a4?w=700&q=80"
+                src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=700&q=80"
                 alt="Safe riding"
                 className="w-full h-80 lg:h-96 object-cover"
               />
@@ -331,25 +331,25 @@ const steps = [
   {
     step: '01',
     title: 'Book Online',
-    desc: 'Đặt xe qua website, WhatsApp hoặc Zalo. Nhanh chóng, dễ dàng và xác nhận ngay lập tức.',
+    desc: 'Book via our website or WhatsApp. Fast, easy and instantly confirmed.',
     icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
   },
   {
     step: '02',
     title: 'Submit Documents',
-    desc: 'Cung cấp CMND/Hộ chiếu hợp lệ. Không cần bằng lái xe — chỉ cần giấy tờ tùy thân!',
+    desc: 'Provide a valid ID or passport. No driver\'s license required — just a valid identity document!',
     icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
   },
   {
     step: '03',
     title: 'Free Delivery',
-    desc: 'Xe được giao tận khách sạn hoặc địa điểm trung tâm Hội An miễn phí. Không cần đến lấy!',
+    desc: 'Your scooter is delivered free of charge to your hotel or any central Da Nang location. No pick-up needed!',
     icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
   },
   {
     step: '04',
     title: 'Ride & Explore',
-    desc: 'Thanh toán bằng tiền mặt hoặc thẻ tín dụng (phí 3%). Khám phá Hội An theo cách của bạn!',
+    desc: 'Pay by cash or credit card (3% fee). Explore Da Nang your way!',
     icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
   }
 ];
@@ -362,7 +362,7 @@ function RentalProcess() {
           <span className="text-primary-600 text-sm font-semibold uppercase tracking-wider">How It Works</span>
           <h2 className="section-title mt-2">Rental Process</h2>
           <p className="section-subtitle">
-            Chỉ 4 bước đơn giản để có chiếc xe điện cho hành trình của bạn
+            Just 4 simple steps to get your electric scooter for the journey
           </p>
         </div>
 
@@ -425,7 +425,7 @@ function Testimonials() {
           <span className="text-primary-600 text-sm font-semibold uppercase tracking-wider">Reviews</span>
           <h2 className="section-title mt-2">Customer Testimonials</h2>
           <p className="section-subtitle">
-            Hàng nghìn du khách đã tin tưởng và yêu thích trải nghiệm cùng T-EcoBike
+            Thousands of travellers trust and love riding with T-EcoBike
           </p>
         </div>
 
@@ -522,7 +522,7 @@ function CTABanner() {
           Ready to Ride the Future?
         </h2>
         <p className="text-primary-100 text-lg mb-8">
-          Đặt xe ngay hôm nay — Giao xe tận nơi, không cần bằng lái, đổi pin siêu tốc!
+          Book today — Free delivery, no license needed, lightning-fast battery swap!
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link to="/booking" className="bg-white text-primary-600 hover:bg-primary-50 font-bold px-8 py-4 rounded-full transition-all hover:-translate-y-0.5 shadow-lg inline-flex items-center gap-2">

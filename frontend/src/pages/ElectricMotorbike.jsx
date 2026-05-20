@@ -10,14 +10,14 @@ const scooterData = {
   price_multi: 150000,
   range_km: 60,
   image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80',
-  description: 'VinFast Evo Grand Lite — chiếc xe điện lý tưởng cho mọi hành trình khám phá Đà Nẵng. Thiết kế trẻ trung, năng động, không cần bằng lái, thân thiện với môi trường và hoàn toàn hợp pháp tại Việt Nam.',
+  description: 'VinFast Evo Grand Lite — the ideal electric scooter for every Da Nang adventure. Stylish, dynamic design, no license needed, eco-friendly and 100% legal in Vietnam.',
   features: [
-    'Không cần bằng lái xe',
-    'Tầm hoạt động 60km/lần sạc',
-    'Đổi pin trong 1 phút',
-    'Hợp pháp 100% theo luật VN',
-    'Bảo hành toàn quốc VinFast',
-    'GPS tracking tích hợp'
+    'No license required',
+    '60km range per charge',
+    'Battery swap in 1 minute',
+    '100% legal under Vietnamese law',
+    'VinFast nationwide warranty',
+    'Built-in GPS tracking'
   ]
 };
 
@@ -25,11 +25,11 @@ const specs = [
   { label: 'Motor', value: 'BLDC Brushless' },
   { label: 'Max Speed', value: '50 km/h' },
   { label: 'Range', value: '60 km' },
-  { label: 'Battery Swap', value: '< 1 phút' },
-  { label: 'Trọng lượng', value: '~65 kg' },
-  { label: 'Charge Time', value: '4-6 giờ' },
-  { label: 'Bằng lái', value: 'Không cần' },
-  { label: 'Bảo hành', value: 'VinFast Toàn Quốc' }
+  { label: 'Battery Swap', value: '< 1 min' },
+  { label: 'Weight', value: '~65 kg' },
+  { label: 'Charge Time', value: '4-6 hours' },
+  { label: 'License', value: 'Not Required' },
+  { label: 'Warranty', value: 'VinFast Nationwide' }
 ];
 
 /* hook: animate on scroll */
@@ -107,7 +107,7 @@ export default function ElectricMotorbike() {
             <div className={`transition-all duration-700 delay-200 ${heroIn ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
               <div className="inline-flex items-center gap-2 bg-primary-500/20 border border-primary-500/40 text-primary-300 rounded-full px-4 py-1.5 text-sm font-medium mb-5">
                 <span className="w-2 h-2 bg-primary-400 rounded-full animate-pulse"></span>
-                Xe điện VinFast · Đà Nẵng
+                VinFast Electric Scooter · Da Nang, Vietnam
               </div>
 
               <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
@@ -146,8 +146,8 @@ export default function ElectricMotorbike() {
                     <div className="text-gray-400 text-xs mt-0.5">200.000₫/ngày</div>
                   </div>
                   <div className="bg-primary-500/20 border border-primary-500/50 rounded-xl p-4 text-center relative overflow-hidden">
-                    <div className="absolute top-1 right-2 text-xs text-primary-300 font-bold">Tiết kiệm 25%</div>
-                    <div className="text-primary-300 text-xs font-medium mb-1">Từ 2 ngày</div>
+                    <div className="absolute top-1 right-2 text-xs text-primary-300 font-bold">Save 25%</div>
+                    <div className="text-primary-300 text-xs font-medium mb-1">2+ days</div>
                     <div className="text-white font-extrabold text-2xl">150k</div>
                     <div className="text-gray-400 text-xs mt-0.5">150.000₫/ngày</div>
                   </div>
@@ -160,7 +160,7 @@ export default function ElectricMotorbike() {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
-                  Đặt xe ngay
+                  Book Now
                 </Link>
                 <a href="https://wa.me/84905659886" target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-green-500/20 hover:bg-green-500/30 border border-green-500/40 text-green-300 font-semibold px-8 py-4 rounded-full transition-all text-base">
@@ -179,13 +179,13 @@ export default function ElectricMotorbike() {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-dark-2">Tính giá thuê</h2>
-            <p className="text-gray-500 mt-2">Kéo thanh slider để xem giá theo số ngày</p>
+            <h2 className="text-3xl font-bold text-dark-2">Price Calculator</h2>
+            <p className="text-gray-500 mt-2">Drag the slider to see the price by number of days</p>
           </div>
           <div className="bg-gray-50 rounded-3xl p-8 shadow-inner">
             <div className="flex items-center justify-between mb-3">
-              <span className="text-sm font-medium text-gray-600">Số ngày thuê</span>
-              <span className="text-2xl font-extrabold text-primary-600">{days} ngày</span>
+              <span className="text-sm font-medium text-gray-600">Number of days</span>
+              <span className="text-2xl font-extrabold text-primary-600">{days} {days === 1 ? 'day' : 'days'}</span>
             </div>
             <input
               type="range" min={1} max={30} value={days}
@@ -198,22 +198,22 @@ export default function ElectricMotorbike() {
                 <div className="text-xl font-extrabold text-primary-600">{perDay.toLocaleString('vi-VN')}₫</div>
               </div>
               <div className="bg-white rounded-2xl p-4 shadow">
-                <div className="text-xs text-gray-400 mb-1">Số ngày</div>
+                <div className="text-xs text-gray-400 mb-1">Days</div>
                 <div className="text-xl font-extrabold text-dark-2">{days}</div>
               </div>
               <div className="bg-primary-500 rounded-2xl p-4 shadow-lg shadow-primary-500/30">
-                <div className="text-xs text-primary-100 mb-1">Tổng tiền</div>
+                <div className="text-xs text-primary-100 mb-1">Total</div>
                 <div className="text-xl font-extrabold text-white">{price.toLocaleString('vi-VN')}₫</div>
               </div>
             </div>
             {days >= 2 && (
               <p className="text-center text-primary-600 text-sm font-medium mt-4 animate-pulse">
-                🎉 Bạn đang tiết kiệm {(days * 50000).toLocaleString('vi-VN')}₫ so với giá 1 ngày!
+                🎉 You save {(days * 50000).toLocaleString('vi-VN')}₫ compared to the 1-day rate!
               </p>
             )}
             <div className="mt-6 text-center">
               <Link to="/booking?scooter=1" className="btn-primary text-base px-10 py-4">
-                Đặt xe {days} ngày — {price.toLocaleString('vi-VN')}₫ →
+                Book {days} {days === 1 ? 'day' : 'days'} — {price.toLocaleString('vi-VN')}₫ →
               </Link>
             </div>
           </div>
@@ -224,8 +224,8 @@ export default function ElectricMotorbike() {
       <section ref={specsRef} className="py-16 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`text-center mb-10 transition-all duration-700 ${specsIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <h2 className="text-3xl font-bold text-dark-2">Thông số kỹ thuật</h2>
-            <p className="text-gray-500 mt-2">Chi tiết về VinFast Evo Grand Lite</p>
+            <h2 className="text-3xl font-bold text-dark-2">Technical Specifications</h2>
+            <p className="text-gray-500 mt-2">Full details of the VinFast Evo Grand Lite</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {specs.map((spec, i) => (
@@ -251,15 +251,15 @@ export default function ElectricMotorbike() {
       <section ref={inclRef} className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`text-center mb-10 transition-all duration-700 ${inclIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <h2 className="text-3xl font-bold text-dark-2">Dịch vụ bao gồm</h2>
-            <p className="text-gray-500 mt-2">Tất cả trong mức giá thuê</p>
+            <h2 className="text-3xl font-bold text-dark-2">What's Included</h2>
+            <p className="text-gray-500 mt-2">Everything included in your rental price</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {[
-              { icon: '🪖', title: 'Mũ bảo hiểm', desc: 'Full-face chất lượng cao' },
-              { icon: '🗺️', title: 'Bản đồ du lịch', desc: 'Điểm tham quan Đà Nẵng' },
-              { icon: '🚚', title: 'Giao xe miễn phí', desc: 'Tận khách sạn của bạn' },
-              { icon: '📞', title: 'Hỗ trợ 24/7', desc: 'Roadside assistance' }
+              { icon: '🪖', title: 'Quality Helmet', desc: 'Full-face helmet provided' },
+              { icon: '🗺️', title: 'Tourist Map', desc: 'Da Nang attractions map' },
+              { icon: '🚚', title: 'Free Delivery', desc: 'To your hotel door' },
+              { icon: '📞', title: '24/7 Support', desc: 'Roadside assistance' }
             ].map((item, i) => (
               <div
                 key={item.title}
@@ -279,11 +279,11 @@ export default function ElectricMotorbike() {
       <section className="py-20 bg-gradient-to-r from-primary-600 via-primary-500 to-primary-400 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=40')] bg-cover bg-center opacity-10" />
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
-          <h2 className="text-4xl font-extrabold text-white mb-4">Sẵn sàng trải nghiệm?</h2>
-          <p className="text-primary-100 text-lg mb-8">Đặt xe ngay hôm nay — giao tận nơi, không cần bằng lái!</p>
+          <h2 className="text-4xl font-extrabold text-white mb-4">Ready to Ride?</h2>
+          <p className="text-primary-100 text-lg mb-8">Book today — free delivery, no license needed!</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link to="/booking?scooter=1" className="bg-white text-primary-600 hover:bg-primary-50 font-bold px-10 py-4 rounded-full transition-all hover:-translate-y-0.5 shadow-lg inline-flex items-center gap-2">
-              Đặt xe ngay →
+              Book Now →
             </Link>
             <a href="tel:+84905659886" className="bg-primary-700/50 hover:bg-primary-700 text-white font-semibold px-10 py-4 rounded-full transition-all inline-flex items-center gap-2">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

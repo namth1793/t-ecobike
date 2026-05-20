@@ -39,7 +39,7 @@ export default function Contact() {
             Get In <span className="text-primary-400">Touch</span>
           </h1>
           <p className="text-gray-400 text-lg">
-            Liên hệ với chúng tôi qua bất kỳ kênh nào. Chúng tôi luôn sẵn sàng hỗ trợ bạn!
+            Reach us through any channel. We are always ready to help you!
           </p>
         </div>
       </section>
@@ -73,8 +73,8 @@ export default function Contact() {
                 },
                 {
                   icon: <><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></>,
-                  title: 'Địa chỉ',
-                  lines: ['135 Trần Nhân Tông', 'Phường Hội An Đông, Thành Phố Đà Nẵng'],
+                  title: 'Address',
+                  lines: ['135 Tran Nhan Tong', 'Hoi An Dong Ward, Da Nang City'],
                   color: 'orange'
                 }
               ].map(c => (
@@ -129,13 +129,13 @@ export default function Contact() {
                     <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span className="text-sm font-medium">Tin nhắn đã được gửi thành công! Chúng tôi sẽ phản hồi sớm nhất có thể.</span>
+                    <span className="text-sm font-medium">Message sent successfully! We will get back to you as soon as possible.</span>
                   </div>
                 )}
 
                 {status === 'error' && (
                   <div className="bg-red-50 border border-red-200 text-red-700 rounded-xl p-4 mb-6 text-sm">
-                    Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ qua hotline.
+                    An error occurred. Please try again or contact us via hotline.
                   </div>
                 )}
 
@@ -150,7 +150,7 @@ export default function Contact() {
                         value={form.full_name}
                         onChange={handle}
                         required
-                        placeholder="Nguyễn Văn A"
+                        placeholder="John Smith"
                         className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-primary-400 focus:ring-2 focus:ring-primary-100 transition-all"
                       />
                     </div>
@@ -202,7 +202,7 @@ export default function Contact() {
                       onChange={handle}
                       required
                       rows={5}
-                      placeholder="Nhập nội dung tin nhắn..."
+                      placeholder="Enter your message..."
                       className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-primary-400 focus:ring-2 focus:ring-primary-100 transition-all resize-none"
                     />
                   </div>

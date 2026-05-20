@@ -21,7 +21,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-5">
-              Dịch vụ cho thuê xe máy điện VinFast tại Hội An. Trải nghiệm du lịch xanh, hiện đại và tiện lợi không cần bằng lái.
+              Premium VinFast electric scooter rental in Da Nang. Experience green, modern travel — no license needed.
             </p>
             {/* Social */}
             <div className="flex gap-3">
@@ -68,20 +68,16 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-white font-semibold text-base mb-4">Our Scooters</h4>
+            <h4 className="text-white font-semibold text-base mb-4">Our Scooter</h4>
             <ul className="space-y-3">
               <li>
                 <div className="text-sm font-medium text-gray-300">VinFast Evo Grand Lite</div>
-                <div className="text-primary-400 text-sm font-semibold">150.000₫/ngày</div>
-              </li>
-              <li>
-                <div className="text-sm font-medium text-gray-300">VinFast Feliz Lite</div>
-                <div className="text-primary-400 text-sm font-semibold">200.000₫/ngày</div>
+                <div className="text-primary-400 text-sm font-semibold">From 150,000₫/day</div>
               </li>
             </ul>
             <div className="mt-5 p-3 bg-primary-500/10 rounded-lg border border-primary-500/20">
-              <div className="text-primary-400 text-xs font-medium mb-1">Ưu đãi đặc biệt</div>
-              <div className="text-white text-sm">Thuê từ 3 ngày giảm <span className="text-primary-400 font-bold">10%</span></div>
+              <div className="text-primary-400 text-xs font-medium mb-1">Special Offer</div>
+              <div className="text-white text-sm">Rent 2+ days & save <span className="text-primary-400 font-bold">25%</span></div>
             </div>
           </div>
 
@@ -97,8 +93,8 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div className="text-sm">
-                  <div className="text-gray-300 font-medium">Địa chỉ</div>
-                  <div>135 Trần Nhân Tông, Phường Hội An Đông, Thành Phố Đà Nẵng</div>
+                  <div className="text-gray-300 font-medium">Address</div>
+                  <div>135 Tran Nhan Tong, Hoi An Dong Ward, Da Nang City</div>
                 </div>
               </li>
               <li className="flex gap-3">

@@ -73,38 +73,38 @@ export default function BookingPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h2 className="text-3xl font-extrabold text-dark-2 mb-3">Đặt xe thành công! 🎉</h2>
-          <p className="text-gray-500 mb-2">Cảm ơn bạn đã tin tưởng T-EcoBike!</p>
+          <h2 className="text-3xl font-extrabold text-dark-2 mb-3">Booking Confirmed! 🎉</h2>
+          <p className="text-gray-500 mb-2">Thank you for choosing T-EcoBike!</p>
           <p className="text-gray-500 text-sm mb-8">
-            Chúng tôi sẽ liên hệ xác nhận qua số điện thoại hoặc email. Xe sẽ được giao đến địa chỉ của bạn vào ngày thuê.
+            We will contact you via phone or email to confirm your booking details. Your scooter will be delivered to your address on the rental date.
           </p>
           <div className="bg-primary-50 rounded-2xl p-5 mb-8 text-left">
-            <div className="text-sm font-semibold text-dark-2 mb-3">📋 Thông tin đặt xe</div>
+            <div className="text-sm font-semibold text-dark-2 mb-3">📋 Booking Summary</div>
             <div className="space-y-2 text-sm text-gray-600">
               <div className="flex justify-between">
-                <span>Xe:</span>
+                <span>Scooter:</span>
                 <span className="font-medium">VinFast Evo Grand Lite</span>
               </div>
               <div className="flex justify-between">
-                <span>Số ngày:</span>
-                <span className="font-medium">{days} ngày</span>
+                <span>Days:</span>
+                <span className="font-medium">{days} {days === 1 ? 'day' : 'days'}</span>
               </div>
               <div className="flex justify-between">
-                <span>Giá/ngày:</span>
+                <span>Rate/day:</span>
                 <span className="font-medium">{perDay.toLocaleString('vi-VN')}₫</span>
               </div>
               <div className="flex justify-between border-t border-primary-200 pt-2 mt-2">
-                <span className="font-semibold">Tổng cộng:</span>
+                <span className="font-semibold">Total:</span>
                 <span className="font-bold text-primary-600 text-lg">{total.toLocaleString('vi-VN')}₫</span>
               </div>
             </div>
           </div>
           <div className="flex flex-col gap-3">
             <a href="https://wa.me/84905659886" target="_blank" rel="noopener noreferrer" className="btn-primary justify-center">
-              Liên hệ qua WhatsApp
+              Contact via WhatsApp
             </a>
             <Link to="/" className="btn-outline justify-center">
-              Về trang chủ
+              Back to Home
             </Link>
           </div>
         </div>
@@ -123,12 +123,12 @@ export default function BookingPage() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-            <span className="text-gray-300">Đặt xe</span>
+            <span className="text-gray-300">Book Now</span>
           </div>
           <h1 className="text-4xl font-extrabold text-white mb-3">
-            Đặt xe <span className="text-primary-400">VinFast Evo Grand Lite</span>
+            Book Your <span className="text-primary-400">VinFast Evo Grand Lite</span>
           </h1>
-          <p className="text-gray-400">Giao xe tận nơi · Không cần bằng lái · Xác nhận ngay!</p>
+          <p className="text-gray-400">Free delivery · No license needed · Instant confirmation!</p>
 
           {/* Pricing chips */}
           <div className="flex flex-wrap gap-3 mt-5">
@@ -157,7 +157,7 @@ export default function BookingPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                     </svg>
                   </div>
-                  <h2 className="text-xl font-bold text-dark-2">Thông tin đặt xe</h2>
+                  <h2 className="text-xl font-bold text-dark-2">Booking Details</h2>
                 </div>
 
                 {status === 'error' && (
@@ -176,7 +176,7 @@ export default function BookingPage() {
                     </div>
                     <div>
                       <div className="font-bold text-dark-2 text-sm">VinFast Evo Grand Lite</div>
-                      <div className="text-primary-600 text-xs font-medium">Không cần bằng lái · 60km range · Đổi pin 1 phút</div>
+                      <div className="text-primary-600 text-xs font-medium">No license needed · 60km range · 1-min battery swap</div>
                     </div>
                     <div className="ml-auto text-right">
                       <div className="text-primary-600 font-extrabold text-sm">Từ 150k/ngày</div>
@@ -188,7 +188,7 @@ export default function BookingPage() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                        Họ tên <span className="text-red-400">*</span>
+                        Full Name <span className="text-red-400">*</span>
                       </label>
                       <input
                         name="full_name" value={form.full_name} onChange={handle} required
@@ -198,7 +198,7 @@ export default function BookingPage() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                        Điện thoại <span className="text-red-400">*</span>
+                        Phone <span className="text-red-400">*</span>
                       </label>
                       <input
                         name="phone" value={form.phone} onChange={handle} required
@@ -221,7 +221,7 @@ export default function BookingPage() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                        Ngày bắt đầu <span className="text-red-400">*</span>
+                        Start Date <span className="text-red-400">*</span>
                       </label>
                       <input
                         type="date" name="start_date" value={form.start_date} onChange={handle} required
@@ -231,7 +231,7 @@ export default function BookingPage() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                        Ngày kết thúc <span className="text-red-400">*</span>
+                        End Date <span className="text-red-400">*</span>
                       </label>
                       <input
                         type="date" name="end_date" value={form.end_date} onChange={handle} required
@@ -242,7 +242,7 @@ export default function BookingPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1.5">Địa chỉ giao xe</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-1.5">Delivery Address</label>
                     <input
                       name="hotel_address" value={form.hotel_address} onChange={handle}
                       placeholder="Tên khách sạn hoặc địa chỉ giao xe"
@@ -251,7 +251,7 @@ export default function BookingPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1.5">Ghi chú thêm</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-1.5">Special Requests</label>
                     <textarea
                       name="note" value={form.note} onChange={handle}
                       rows={3}
@@ -278,7 +278,7 @@ export default function BookingPage() {
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
-                        Xác nhận đặt xe {days > 0 ? `— ${total.toLocaleString('vi-VN')}₫` : ''}
+                        Confirm Booking {days > 0 ? `— ${total.toLocaleString('vi-VN')}₫` : ''}
                       </>
                     )}
                   </button>
@@ -295,14 +295,14 @@ export default function BookingPage() {
                 <div className="bg-gray-50 rounded-2xl p-4 mb-5">
                   <div className="text-xs text-gray-400 mb-1">Xe thuê</div>
                   <div className="font-bold text-dark-2 text-sm">VinFast Evo Grand Lite</div>
-                  <div className="text-primary-500 text-xs mt-0.5">Không cần bằng lái · 60km range</div>
+                  <div className="text-primary-500 text-xs mt-0.5">No license needed · 60km range</div>
                 </div>
 
                 {/* Pricing */}
                 {days > 0 ? (
                   <div className="space-y-3">
                     <div className="flex justify-between text-sm">
-                      <span className="text-gray-500">Số ngày</span>
+                      <span className="text-gray-500">Days</span>
                       <span className="font-medium">{days} ngày</span>
                     </div>
                     <div className="flex justify-between text-sm">
@@ -311,12 +311,12 @@ export default function BookingPage() {
                     </div>
                     {days >= 2 && (
                       <div className="bg-primary-50 rounded-xl px-3 py-2 text-xs text-primary-600 font-medium">
-                        🎉 Bạn tiết kiệm {(days * 50000).toLocaleString('vi-VN')}₫ so với giá 1 ngày!
+                        🎉 You save {(days * 50000).toLocaleString('vi-VN')}₫ compared to the 1-day rate!
                       </div>
                     )}
                     <div className="border-t border-gray-100 pt-3">
                       <div className="flex justify-between">
-                        <span className="font-bold text-dark-2">Tổng cộng</span>
+                        <span className="font-bold text-dark-2">Total</span>
                         <span className="font-extrabold text-primary-600 text-xl">
                           {total.toLocaleString('vi-VN')}₫
                         </span>
