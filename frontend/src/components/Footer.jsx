@@ -50,6 +50,7 @@ export default function Footer() {
               {[
                 { label: 'Home', path: '/' },
                 { label: 'Electric Motorbike', path: '/electric-motorbike' },
+                { label: 'Blog', path: '/blog' },
                 { label: 'About Us', path: '/about' },
                 { label: 'Contact Us', path: '/contact' },
                 { label: 'Book Now', path: '/booking' }

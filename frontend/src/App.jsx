@@ -7,6 +7,8 @@ import ElectricMotorbike from './pages/ElectricMotorbike';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import BookingPage from './pages/BookingPage';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import FloatingContact from './components/FloatingContact';
 
 function ScrollToTop() {
@@ -26,6 +28,8 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<BookingPage />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
       <Footer />
       <FloatingContact />
