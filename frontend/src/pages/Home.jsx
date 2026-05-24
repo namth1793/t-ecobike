@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 import axios from '../api';
@@ -11,7 +11,7 @@ function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80')`
+          backgroundImage: `url('/assets/banner.jpg')`
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/60 to-dark/90" />
@@ -21,10 +21,6 @@ function Hero() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-primary-500/20 border border-primary-500/40 rounded-full px-4 py-1.5 text-primary-300 text-sm font-medium mb-6">
-          <span className="w-2 h-2 bg-primary-400 rounded-full animate-pulse"></span>
-          VinFast Authorized Rental · Da Nang, Vietnam
-        </div>
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight mb-6">
           Ride The{' '}
@@ -111,7 +107,7 @@ function ScootersSection() {
           <div className={`relative transition-all duration-700 delay-150 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
             <div className="rounded-3xl overflow-hidden shadow-2xl group">
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+                src="/assets/intro.jpg"
                 alt="VinFast Evo Grand Lite"
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -168,6 +164,23 @@ function ScootersSection() {
               </Link>
             </div>
           </div>
+        </div>
+
+        {/* Photo Gallery */}
+        <div className={`mt-16 grid grid-cols-3 gap-4 max-w-5xl mx-auto transition-all duration-700 delay-300 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          {[
+            '/assets/z7848049053773_91b9c21f271cf11d75540df23129fb02.jpg',
+            '/assets/z7848049056601_f6683072c445f15defc6932241b7c24e.jpg',
+            '/assets/z7848049057923_2bff46bc0133d6896f94b05cdd275ab2.jpg',
+          ].map((src, i) => (
+            <div key={i} className="rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+              <img
+                src={src}
+                alt={`T-EcoBike photo ${i + 1}`}
+                className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
