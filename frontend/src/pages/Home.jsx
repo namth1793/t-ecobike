@@ -321,7 +321,7 @@ function SafetyTips() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl shadow-primary-500/10">
               <img
-                src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=700&q=80"
+                src="/assets/z7848049053773_91b9c21f271cf11d75540df23129fb02.jpg"
                 alt="Safe riding"
                 className="w-full h-80 lg:h-96 object-cover"
               />
@@ -379,16 +379,16 @@ function RentalProcess() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {steps.map((s, i) => (
-            <div key={i} className="relative group">
+            <div key={i} className="relative group h-full">
               {/* Connector line */}
               {i < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-primary-300 to-gray-200 z-0 -translate-x-6" />
               )}
-              <div className="relative bg-white rounded-2xl p-6 shadow hover:shadow-lg transition-all duration-300 hover:-translate-y-1 z-10">
+              <div className="relative bg-white rounded-2xl p-6 shadow hover:shadow-lg transition-all duration-300 hover:-translate-y-1 z-10 h-full flex flex-col">
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {s.icon}
                     </svg>
@@ -396,7 +396,7 @@ function RentalProcess() {
                   <span className="text-4xl font-extrabold text-gray-100 select-none">{s.step}</span>
                 </div>
                 <h3 className="text-base font-bold text-dark-2 mb-2">{s.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
+                <p className="text-gray-500 text-sm leading-relaxed flex-1">{s.desc}</p>
               </div>
             </div>
           ))}
