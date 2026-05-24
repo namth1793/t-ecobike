@@ -9,6 +9,8 @@ import Contact from './pages/Contact';
 import BookingPage from './pages/BookingPage';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import AdminLogin from './pages/admin/AdminLogin';
+import AdminBlog from './pages/admin/AdminBlog';
 import FloatingContact from './components/FloatingContact';
 
 function ScrollToTop() {
@@ -17,11 +19,14 @@ function ScrollToTop() {
   return null;
 }
 
-function App() {
+function AppContent() {
+  const { pathname } = useLocation();
+  const isAdmin = pathname.startsWith('/admin');
+
   return (
-    <BrowserRouter>
+    <>
       <ScrollToTop />
-      <Navbar />
+      {!isAdmin && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/electric-motorbike" element={<ElectricMotorbike />} />
@@ -30,9 +35,19 @@ function App() {
         <Route path="/booking" element={<BookingPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin" element={<AdminBlog />} />
       </Routes>
-      <Footer />
-      <FloatingContact />
+      {!isAdmin && <Footer />}
+      {!isAdmin && <FloatingContact />}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
   );
 }

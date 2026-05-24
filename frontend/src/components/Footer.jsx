@@ -129,9 +129,14 @@ export default function Footer() {
           <p className="text-sm text-center">
             © {new Date().getFullYear()} T-EcoBike. All rights reserved.
           </p>
-          <div className="flex items-center gap-2 text-xs">
-            <span className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></span>
-            <span>100% Electric · Eco-Friendly · No License Needed</span>
+          <div className="flex items-center gap-4 text-xs">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></span>
+              <span>100% Electric · Eco-Friendly · No License Needed</span>
+            </div>
+            <Link to="/admin/login" className="text-gray-700 hover:text-gray-400 transition-colors">
+              Admin
+            </Link>
           </div>
         </div>
       </div>
