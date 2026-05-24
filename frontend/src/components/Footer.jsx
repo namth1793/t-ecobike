@@ -115,7 +115,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div className="text-sm">
-                  <a href="mailto:vu170591@gmail.com" className="hover:text-primary-400 transition-colors">vu170591@gmail.com</a>
+                  <a href="mailto:truongvunguyen1991@gmail.com" className="hover:text-primary-400 transition-colors">truongvunguyen1991@gmail.com</a>
                 </div>
               </li>
             </ul>
